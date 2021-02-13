@@ -12,7 +12,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1> Make Korea</h1>
+				<h1> <a href = "index.html">Make Korea</a></h1>
 				<nav>
 					<ul>
 						<li><a href="#intro">Share</a></li>
@@ -29,20 +29,9 @@
 					<p> We started the 'Make Korea' project to give you a real experience of Korea.
 					<br> The goal of the first project is to give you <u>a real Korean name </u> through AI. </p>
 					<footer>
-						<a href="#one" class="button style2 down">More</a>
+						<a href="#two" class="button style2 down">More</a>
 					</footer>
 				</div>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Make <br> Korean name</h2>
-					</header>
-					<p>Enter your name and some options. <br> AI will recommend 'real Korean name' that goes well with your original name.</p>
-				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Two -->
@@ -51,17 +40,40 @@
 					<header>
 						<h2>Fill the form</h2>
 					</header>
-				
-				<input type = "text" name = "firstname" placeholder="Your first Name">
-				<input type = "text" name = "lastname" placeholder="Your last Name">
-				<label class="box-radio1-input"><input type="radio" name="sex" value="Male" checked="checked"><span>Male</span></label>
-				<label class="box-radio1-input"><input type="radio" name="sex" value="Fmale"><span>Fmale</span></label>
-				<p>
-				<label class="box-radio2-input"><input type="radio" name="feel" value="Good meaning" checked="checked"><span>Good meanding</span></label>
-				<label class="box-radio2-input"><input type="radio" name="feel" value="Popular"><span>Popular</span></label>
-				<label class="box-radio2-input"><input type="radio" name="feel" value="Unique" checked="checked"><span>Unique</span></label>
-				</p>
+				<form id = "information" name = "input_information" method = "post" action = "candidate.html">
+					<input type = "text" name = "firstname" placeholder="Your first Name">
+					<input type = "text" name = "lastname" placeholder="Your last Name">
+					<label class="box-radio1-input"><input type="radio" name="sex" value="Male" checked="checked"><span>Male</span></label>
+					<label class="box-radio1-input"><input type="radio" name="sex" value="Fmale"><span>Fmale</span></label>
+					<h4>Type of name<h4>
+					<p>
+					<label class="box-radio2-input"><input type="radio" name="feel" value="Good meaning" checked="checked"><span>Good meaning</span></label>
+					<label class="box-radio2-input"><input type="radio" name="feel" value="Popular"><span>Popular</span></label>
+					<label class="box-radio2-input"><input type="radio" name="feel" value="Unique"><span>Unique</span></label>
+					</p>
+					<br>
+					<div id="submit">
+					<input id = "next" type = 'submit' value = "Next" >
+					</div>
+				</form>
 				</div>
+			</section>
+
+		<!-- find your name -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Already made<br> Korean Name?</h2>
+					</header>
+				<form id = "ID" name = "ID_PW" method = "post" action = "candidate.html">
+						<input type = "text" name = "firstname" placeholder="Your ID">
+						<input type = "Password" name = "lastname" placeholder="Password 6 Digits">
+						</p>
+						<br>
+						<div id="submit">
+						<input id = "next" type = 'submit' value = "Search" >
+						</div>
+					</div>
 			</section>
 
 
